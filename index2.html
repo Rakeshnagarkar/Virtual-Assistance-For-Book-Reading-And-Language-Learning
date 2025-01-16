@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+    <title>Virtual Assistance for Book Reading</title>
+    <style>
+      /* Styles for the 3D buttons */
+      .button__group {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .btn-3d {
+        padding: 18px 35px;
+        background-color: #0047ff; /* Neon bold blue */
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        font-weight: 900;
+        cursor: pointer;
+        box-shadow: 0 5px #002db3; /* Deep bold blue shadow */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .btn-3d:active {
+        transform: translateY(4px);
+        box-shadow: 0 1px #002db3;
+      }
+
+      .btn-3d-alt {
+        background-color: #00cc44; /* Neon bold green */
+        color: #fff;
+        box-shadow: 0 5px #009933; /* Deep bold green shadow */
+      }
+
+      .btn-3d-alt:active {
+        transform: translateY(4px);
+        box-shadow: 0 1px #009933;
+      }
+
+      /* Style for the log-out button */
+      .log-out-btn {
+        padding: 10px 20px;
+        background-color: #ff0033; /* Bold red color */
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .log-out-btn:active {
+        transform: translateY(3px);
+        box-shadow: 0 1px #cc0026;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <div>E</div>
+        Learning
+      </div>
+      <ul class="nav__socials">
+        <li>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-pinterest-line"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+        </li>
+      </ul>
+      <div class="nav__contact">
+        <div class="nav__contact__card">
+          <span><i class="ri-phone-line"></i></span>
+          
+        </div>
+        <div class="nav__contact__card">
+          <span><i class="ri-mail-line"></i></span>
+          <div>
+            <p>Email Us</p>
+            <h4>info@elearnings.com</h4>
+          </div>
+        </div>
+        <!-- Log Out Button -->
+        <div class="nav__contact__card">
+          <button class="log-out-btn">Log Out</button>
+        </div>
+      </div>
+    </nav>
+    <header class="header__container">
+      <div class="header__image">
+        <img src="assets/header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>Virtual Assistance for Book Reading and <span>Language Learning</span></h1>
+        <p>
+          Unlock the power of language and literature in one platform.
+          Whether you're aiming to improve your pronunciation, explore new languages, or enjoy seamless book reading with text-to-speech and
+          transcription features, our comprehensive virtual assistant is designed to support your learning and entertainment journey.
+        </p>
+        <h2 style="font-size: 1.5rem; font-weight: 900; margin-top: 20px;">
+          Which of our services would you like to use today?
+        </h2>
+        <div class="button__group">
+          <a href="texttospeech.html">
+            <button class="btn-3d">📖 Book Reading & Language Learning</button>
+          </a>
+          <a href="speechtotext.html">
+            <button class="btn-3d btn-3d-alt">🎙️ Practice Your Pronunciation</button>
+          </a>
+        </div>
+        
+      </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

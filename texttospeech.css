@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background: rgba(64, 61, 132, 0.8); /* Semi-transparent dark background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.heading h1 {
+    font-size: 45px;
+    font-weight: 550;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1 span {
+    color: #ff2969;
+}
+
+select {
+    width: 100%; /* Ensure the select element takes up the full width */
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 30px 0 20px; /* Adjust padding to make space for the smaller arrow */
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    appearance: none;
+    background-image: url(img/dropdown.png); /* Ensure the path to the dropdown arrow image is correct */
+    background-repeat: no-repeat;
+    background-size: 20px; /* Smaller arrow size */
+    background-position: right 10px center; /* Adjust position for the smaller arrow */
+}
+
+option {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* To remove the default dropdown arrow for Internet Explorer and Edge */
+select::-ms-expand {
+    display: none;
+}
+
+
+
+/* Translator Property Styling */
+.translator_property {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+/* Dropdown and Icon Styling */
+.nuv_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.bx-transfer {
+    font-size: 24px;
+    color: #ff2969;
+    cursor: pointer;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    height: 150px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Write Box Styling */
+.write_box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Icons Styling */
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bx-volume-full, .bx-copy {
+    font-size: 24px;
+    color: #ff2969;
+    cursor: pointer;
+}
+
+.code-length {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Button Styling */
+button {
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button img {
+    width: 16px;
+}

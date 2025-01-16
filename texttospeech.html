@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./texttospeech.css">
+</head>
+<body>
+    <div class="container">
+        <div class="translator_property">
+            <ul class="nuv_item">
+                <li>
+                    <select id="from-lang">
+                        <!-- Options will be dynamically populated here -->
+                    </select>
+                </li>
+                <li class="bx bx-transfer" id="swap-lang"></li>
+                <li>
+                    <select id="to-lang">
+                        <!-- Options will be dynamically populated here -->
+                    </select>
+                </li>
+            </ul>
+
+            <div class="write_box">
+                <div class="property_from">
+                    <textarea maxlength="5000" id="fromText" placeholder="Write here"></textarea>
+                    <div class="icons">
+                        <span class="bx bx-volume-full" id="fromVoice"></span>
+                        
+                        <!-- New buttons to the right of the volume icon -->
+                        <button id="RecordBtn">Pause</button>
+                        <div id="recordingStatus" style="color: red; font-weight: bold; display: none;">Recording...</div>
+
+                        <div class="code-length" id="wordCount">0 / 5000</div>
+                    </div>
+                </div>
+                <div class="property_trans">
+                    <textarea id="toText" readonly></textarea>
+                    <div class="icons">
+                        <span class="bx bx-copy" id="cpyBtn"></span>
+                        <span class="bx bx-volume-full" id="toVoice"></span>
+                        
+                       
+                    </div>
+                </div>
+
+                <!-- Extract Text from Image Section -->
+                <div class="extract-text-section">
+                    <input type="file" id="imageInput" accept="image/*">
+                    <button id="extractTextBtn" style="margin-top: 10px;">Extract Text from Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Include the languages2.js file -->
+    <script src="languages2.js"></script>
+    
+    <!-- Include the external JavaScript file -->
+    <script src="texttospeech.js"></script>
+</body>
+</html>
